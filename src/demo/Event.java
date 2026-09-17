@@ -1,3 +1,5 @@
+package demo;
+
 public class Event {
     private String type;
     private String date;

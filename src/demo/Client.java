@@ -1,3 +1,7 @@
+package demo;
+
+import java.util.Scanner;
+
 public class Client {
     public static void main(String[] args) {
         Student s1 = new Student("1","Lily",120);
@@ -17,9 +21,11 @@ public class Client {
         System.out.println(string1 == string2);
         System.out.println(string1 == string3); //new memory address created by using new
 
-        Scanner scanner = new Scanner(System.in);
-        String string4 = scanner.nextLine(); //read all until \n
-        String[] tokens = string4.split("\\s+");
+        Scanner scanner = new Scanner(System.in); //to read from terminal
+        String string4 = scanner.nextLine(); //read all until \n (new line character)
+        String[] tokens = string4.split("\\s+"); //parse the tokens with the delimiter
+
+        System.out.println(tokens.length);
         Event event1 = new Event();
     }
 }

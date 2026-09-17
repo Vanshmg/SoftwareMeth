@@ -1,4 +1,7 @@
+package demo;
+
 public class Student implements Comparable<Student> {
+    public static final int MAX_CREDIT = 120;
     private String id;
     private String name;
     private int credits;
@@ -32,7 +35,7 @@ public class Student implements Comparable<Student> {
     }
 
     @Override
-    public boolean equals(Object obj) { //method parameter has to be the same for overriding cant be Student student
+    public boolean equals(Object obj) { //method parameter has to be the same for overriding cant be demo.Student student
         if (obj instanceof Student){
             Student student = (Student) obj;
             return student.id.equals(this.id);
